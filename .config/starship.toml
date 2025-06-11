@@ -1,0 +1,91 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# prompt
+add_newline = false
+format = """$all"""
+right_format = """$time"""
+continuation_prompt = '➜ '
+command_timeout = 3600
+
+# line_break
+[line_break]
+disabled = true
+
+# character
+[character]
+success_symbol = '[➜](bold green) '
+error_symbol = '[✗](bold red) '
+
+
+# aws
+[aws]
+disabled = true
+
+
+# battery
+[battery]
+unknown_symbol = '🔋 '
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '💀 '
+
+[[battery.display]]
+threshold = 20
+style = 'bold red'
+
+[[battery.display]] # 'bold yellow' style and 💦 symbol when capacity is between 10% and 30%
+threshold = 50
+style = 'bold yellow'
+discharging_symbol = '💦 '
+
+
+# memory usage
+[memory_usage]
+disabled = true
+threshold = -1
+symbol = ' '
+style = 'bold dimmed green'
+
+
+# os
+# ~/.config/starship.toml
+
+[os]
+format = "on [($name )]($style) $symbol"
+style = "bold blue"
+disabled = true
+
+[os.symbols]
+Ubuntu = "🐧 "
+
+
+# time
+[time]
+disabled = false
+format = '🕙 [\[$time\]]($style) '
+time_format = '%T'
+# utc_time_offset = '-5'
+# time_range = '10:00:00-14:00:00'
+
+
+# sudo
+[sudo]
+style = 'bold blink blue'
+symbol = '🧙 '
+disabled = false
+
+
+# nodejs
+[nodejs]
+format = 'via [ $version](bold green) '
+
+# git
+[git_branch]
+symbol = ' '
+# truncation_length = 20
+# truncation_symbol = '…'
+
+# google cloud cli
+[gcloud]
+disabled = true

@@ -1,2 +1,6 @@
+*
 !.gitignore
 !README.md
+!.zshrc
+!*.config
+!.config/*

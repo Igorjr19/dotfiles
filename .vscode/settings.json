@@ -1,0 +1,89 @@
+{
+  // Editor, Workbench and Window
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never"
+  },
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "window.commandCenter": false,
+  // Terminal
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorStyleInactive": "underline",
+  "terminal.integrated.suggest.enabled": true,
+  // Git
+  "git.autofetch": true,
+  "git.confirmSync": true,
+  // Linting and Formatting
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.variableTypes.enabled": true,
+  // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // "typescript.inlayHints.enumMemberValues.enabled": true,
+  // "typescript.inlayHints.parameterTypes.enabled": true,
+  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "prettier.endOfLine": "auto",
+  "files.eol": "\n",
+  "[json, jsonc, typescript, javascript, typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  // *** Extensions ***
+  // GitHub Copilot Chat
+  "chat.agent.enabled": true,
+  // Material Icon Theme
+  "material-icon-theme.activeIconPack": "nest",
+  "material-icon-theme.saturation": 1,
+  "material-icon-theme.files.color": "#42a5f5",
+  "material-icon-theme.hidesExplorerArrows": false,
+  "material-icon-theme.folders.theme": "specific",
+  // Catppuccin Theme and Icons
+  "catppuccin.extraBordersEnabled": true,
+  "catppuccin-icons.monochrome": false,
+  "catppuccin-icons.associations.extensions": {
+    "module.ts": "nest",
+    "service.ts": "nest-service",
+    "repository.ts": "nest-gateway",
+    "controller.ts": "nest-controller",
+    "gateway.ts": "nest-gateway",
+    "decorator.ts": "nest-decorator",
+    "filter.ts": "nest-filter",
+    "interceptor.ts": "nest-interceptor",
+    "pipe.ts": "nest-pipe",
+    "guard.ts": "nest-guard"
+  },
+  // Code Spell Checker
+  "cSpell.language": "en,pt-BR,pt,en-US,en-GB,lorem",
+  // Todo Tree
+  "todo-tree.highlights.useColourScheme": true,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "@TODO"
+  ],
+  "todo-tree.general.tagGroups": {
+    "TODO": ["TODO", "@TODO"]
+  },
+}

@@ -1,0 +1,13 @@
+[Unit]
+Description=Apply Catppuccin Mocha to TTY
+After=systemd-user-sessions.service plymouth-quit-wait.service
+
+[Service]
+Type=oneshot
+StandardOutput=tty
+StandardError=tty
+TTYPath=/dev/tty2
+ExecStart=/usr/bin/sh -c 'printf "\\e]P01e1e2e\\e]P1f38ba8\\e]P2a6e3a1\\e]P3f9e2af\\e]P489b4fa\\e]P5b4befe\\e]P694e2d5\\e]P7bac2de\\e]P845475a\\e]P9f38ba8\\e]PAa6e3a1\\e]PBf9e2af\\e]PC89b4fa\\e]PDb4befe\\e]PE94e2d5\\e]PFa6adc8" > /dev/tty2'
+
+[Install]
+WantedBy=multi-user.target

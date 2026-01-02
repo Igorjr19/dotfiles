@@ -288,7 +288,7 @@ for_window [app_id="floating_shell"] {
 
 
 # Defina o tema aqui para facilitar
-set $cursor_theme catppuccin-mocha-lavender-cursors
+set $cursor_theme catppuccin-mocha-mauve-cursors
 set $cursor_size 24
 
 # Força o cursor no Sway (seat)

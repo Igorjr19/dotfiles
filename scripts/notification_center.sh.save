@@ -1,0 +1,9 @@
+then
+    notify-send "Central" "Nenhuma notificação no histórico."
+    exit 0
+fi
+
+# Abre o Wofi com a lista
+# Quando você seleciona uma linha, ele não faz nada (apenas visualização por enquanto)
+# Se quiser limpar o histórico ao selecionar, podemos adicionar comandos depois.
+echo "$NOTIFICATIONS" | wofi --dmenu --prompt "Notificações Recentes" --width 600 --height 400 --style ~/dotfiles/wofi/.config/wofi/style.css

@@ -71,3 +71,18 @@ eval "$(starship init zsh)"
 eval "$(/home/dsin/.local/bin/mise activate zsh)"
 
 autoload -Uz compinit && compinit
+
+# pnpm
+export PNPM_HOME="/home/dsin/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
+
+export DSIN_DATABASE_FOLDER=/mnt/c/bancos-de-dados
+export DOCKER_MACHINE_IP=127.0.0.1
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/dsin/.local/bin:$PATH"

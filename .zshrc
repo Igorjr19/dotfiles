@@ -49,8 +49,6 @@ alias ll='lsd -l'
 alias la='lsd -a'
 alias lla='lsd -la'
 alias lt='lsd --tree'
-alias cat="ccat"
-alias less="cless"
 
 # Plugins settings
 ZSH_COLORIZE_TOOL=pygmentize
